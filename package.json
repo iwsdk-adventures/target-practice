@@ -11,7 +11,8 @@
     "reference:status": "iwsdk reference status",
     "reference:warmup": "iwsdk reference warmup",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "package:hub": "node scripts/package-for-hub.mjs"
   },
   "dependencies": {
     "@iwsdk/core": "0.3.2",
