@@ -1,0 +1,74 @@
+<style>
+  .panel {
+    width: 50;
+    padding: 2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #09090b;
+    border-color: #27272a;
+    border-width: 0.15;
+    border-radius: 3;
+  }
+
+  .group {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heading {
+    font-size: 3.5;
+    font-weight: medium;
+    color: #fafafa;
+    text-align: center;
+  }
+
+  .stat {
+    font-size: 3;
+    color: #fafafa;
+    text-align: center;
+    margin-top: 1;
+  }
+
+  .sub-stat {
+    font-size: 2.2;
+    color: #a1a1aa;
+    text-align: center;
+    margin-top: 0.5;
+  }
+
+  .action-button {
+    width: 60%;
+    padding: 1.2;
+    margin-top: 2;
+    background-color: #fafafa;
+    color: #09090b;
+    border-radius: 1.5;
+    border-width: 0.1;
+    border-color: #e4e4e7;
+    font-size: 2.5;
+    font-weight: medium;
+    text-align: center;
+    cursor: pointer;
+  }
+
+  #game-over-group {
+    display: none;
+  }
+</style>
+<div class="panel">
+  <div id="playing-group" class="group">
+    <span class="heading">TARGET PRACTICE</span>
+    <span id="shots-text" class="stat">Shots Left: 20</span>
+    <span id="score-text" class="stat">Score: 0</span>
+    <button id="restart-button" class="action-button">Restart</button>
+  </div>
+  <div id="game-over-group" class="group">
+    <span class="heading">ROUND COMPLETE</span>
+    <span id="final-score-text" class="stat">Final Score: 0</span>
+    <span id="best-score-text" class="sub-stat">Best Score: 0</span>
+    <button id="new-game-button" class="action-button">New Game</button>
+  </div>
+</div>
